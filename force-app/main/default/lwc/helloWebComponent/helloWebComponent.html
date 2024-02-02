@@ -1,0 +1,19 @@
+<template>
+  <lightning-card title={capitalizedGreeting} icon-name="custom:custom14">
+    <div class="slds-var-m-around_medium">
+      <p>Today is {currentDate}</p>
+      <lightning-input
+        type="checkbox"
+        label="Terms & Conditions"
+        name="input1"
+      ></lightning-input>
+
+      <lightning-input
+        type="text"
+        value={greeting}
+        onchange={handleGreetingChange}
+        label="Enter some text"
+      ></lightning-input>
+    </div>
+  </lightning-card>
+</template>
